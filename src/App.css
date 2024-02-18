@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+.text-editor .DraftEditor-root {
+  border: 1px solid #000;
+  /* This will add a black border */
+  padding: 10px;
+  /* This will add some spacing inside the border */
+  min-height: 400px;
+  /* This will ensure that the editor has a minimum height */
 }
 
-.App-logo {
-  height: 40vmin;
+.public-DraftEditorPlaceholder-root {
+  position: absolute;
+  color: #888;
   pointer-events: none;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.public-DraftEditorPlaceholder-hasFocus {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  
+  float: right;
+  margin: 5px;
 }
